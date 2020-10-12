@@ -1,0 +1,34 @@
+<div class="login">
+  <div class="login__header">
+    <div class="login__header__primary">
+      <span class="login__header__primary--green"> haifa</span>:dev
+    </div>
+    <div class="login__header__secondary">developers community</div>
+  </div>
+  <div class="login__content">
+    <form class="form">
+      <label for=""><mat-icon>person_outline</mat-icon>Email</label>
+      <mat-form-field appearance="outline">
+        <input matInput placeholder="i.e. example@example.com" />
+        <mat-error *ngIf="true">test</mat-error>
+      </mat-form-field>
+      <label for=""><mat-icon>lock_outline</mat-icon> Password</label>
+      <mat-form-field appearance="outline">
+        <input matInput placeholder="i.e. example@!%$5475347" [type]="hide ? 'password' : 'text'" />
+        <button
+          type="button"
+          mat-icon-button
+          matSuffix
+          (click)="hide = !hide"
+          [attr.aria-label]="'Hide password'"
+          [attr.aria-pressed]="hide"
+        >
+          <mat-icon>{{ hide ? 'visibility_off' : 'visibility' }}</mat-icon>
+        </button>
+      </mat-form-field>
+      <div class="actions">
+        <button type="submit" class="submit-button" color="primary" mat-raised-button>Log In</button>
+      </div>
+    </form>
+  </div>
+</div>
