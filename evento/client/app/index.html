@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Evento</title>
+
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
+    <link
+      href="lib/@fortawesome/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <!--load all styles -->
+
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-route/angular-route.js"></script>
+    <script src="lib/angular-cookies/angular-cookies.js"></script>
+    <script src="lib/angular-resource/angular-resource.js"></script>
+    <script src="lib/axios/dist/axios.min.js"></script>
+
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+    <!-- services -->
+    <script src="core/core.module.js"></script>
+    <script src="core/auth/auth.module.js"></script>
+    <script src="core/auth/auth.service.js"></script>
+
+    <script src="core/verifyAuth/verifyAuth.module.js"></script>
+    <script src="core/verifyAuth/verifyAuth.service.js"></script>
+
+    <!-- components -->
+    <script src="login/login.module.js"></script>
+    <script src="login/login.component.js"></script>
+
+    <script src="dashboard/dashboard.module.js"></script>
+    <script src="dashboard//dashboard.component.js"></script>
+  </head>
+  <body class="">
+    <div ng-view class=""></div>
+  </body>
+</html>

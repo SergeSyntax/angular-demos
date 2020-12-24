@@ -1,0 +1,57 @@
+<div class="main-login">
+  <div class="container vh-100 pt-2 pt-md-5 ">
+    <h1
+      id="heading"
+      class="text-center pt-md-5 text-white font-weight-light display-4"
+    >
+      Eveno Sent
+    </h1>
+    <form
+      ng-submit="$ctrl.submit()"
+      class="mx-auto mt-5 col-sm-6 col-lg-4 card p-4 shadow"
+    >
+      <div class="form-group mb-4">
+        <label class="font-weight-bold" for="email">
+          <i class="fas fa-envelope ml-2"></i> Email</label
+        >
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          aria-describedby="emailHelp"
+          ng-model="$ctrl.email"
+        />
+        <small id="emailHelp" class="form-text text-muted"
+          >We'll never share your email with anyone else.</small
+        >
+      </div>
+
+      <div class="form-group mb-4">
+        <label class="font-weight-bold" for="inputPassword6"
+          ><i class="fas fa-lock ml-2"></i> Password</label
+        >
+        <input
+          type="password"
+          id="inputPassword6"
+          class="form-control"
+          aria-describedby="passwordHelpInline"
+          ng-model="$ctrl.password"
+        />
+        <small id="passwordHelpInline" class="text-muted">
+          Must be 8-20 characters long.
+        </small>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+
+      <div class="d-flex justify-content-between mt-4">
+        <a href="">Forgot Password?</a>
+        <a href="" class="">Support</a>
+      </div>
+    </form>
+    <div class="text-center pt-1">
+      <small class="text-white "
+        >&copy; 2019 OrganizationName. All rights reserved.</small
+      >
+    </div>
+  </div>
+</div>
